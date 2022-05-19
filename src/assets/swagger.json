@@ -1,0 +1,4191 @@
+{
+    "swagger":"2.0",
+    "info":{
+       "description":"List of the API available ",
+       "version":"1.0",
+       "title":"Synchronosure UI API",
+       "termsOfService":"http://swagger.io/terms/",
+       "contact":{
+          "email":"apiteam@swagger.io"
+       },
+       "license":{
+          "name":"Apache 2.0",
+          "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+       }
+    },
+    "host":"localhost:8080",
+    "basePath":"",
+    "tags":[
+       {
+          "name":"AcordControllerImpl",
+          "description":"AcordControllerImpl"
+       },
+       {
+          "name":"AgencyControllerImpl",
+          "description":"AgencyControllerImpl"
+       },
+       {
+           "name": "ApiKeyController",
+           "description": "ApiKeyController"
+       },
+       {
+           "name": "AttachmentController",
+           "description": "AttachmentController"
+       },
+       {
+           "name": "ClassPageflowController",
+           "description": "ClassPageflowController"
+       },
+       {
+           "name": "ClearanceControllerImpl",
+           "description": "ClearanceControllerImpl"
+       },
+       {
+           "name": "ComparisonControllerImpl",
+           "description": "ComparisonControllerImpl"
+       },
+       {
+           "name": "CountyControllerImpl",
+           "description": "CountyControllerImpl"
+       },
+       {
+           "name": "CovidControllerImpl",
+           "description": "CovidControllerImpl"
+       },
+       {
+           "name": "DbController",
+           "description": "DbController"
+       },
+       {
+           "name": "DeductibleControllerImpl",
+           "description": "DeductibleControllerImpl"
+       },
+       {
+           "name": "DotControllerImpl",
+           "description": "DotControllerImpl"
+       }
+    ],
+    "schemes":[
+       "http"
+    ],
+    "paths":{
+        "/api/acord/forms":{
+              "get":{
+                  "tags":[
+                      "AcordControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-acord/forms",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/acord":{
+              "get":{
+                  "tags":[
+                      "AcordControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-acord",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/acord/parse":{
+              "post":{
+                  "tags":[
+                      "AcordControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-acord/parse",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/acord/upload":{
+              "post":{
+                  "tags":[
+                      "AcordControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-acord/upload",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/agency":{
+              "post":{
+                  "tags":[
+                      "AgencyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-agency",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "parameters":[  
+                    {  
+                        "in":"formData",
+                        "type": "string",
+                        "name":"nipr",
+                        "description":"nipr--",
+                        "required": true
+                    }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/api_key/add":{
+              "post":{
+                  "tags":[
+                      "ApiKeyController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-api_key/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/api_key/delete":{
+              "post":{
+                  "tags":[
+                      "ApiKeyController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-api_key/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/api_key":{
+              "get":{
+                  "tags":[
+                      "ApiKeyController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-api_key",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/api_key/update":{
+              "post":{
+                  "tags":[
+                      "ApiKeyController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-api_key/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/attachment":{
+              "get":{
+                  "tags":[
+                      "AttachmentController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-attachment",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/attachment/list":{
+              "post":{
+                  "tags":[
+                      "AttachmentController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-attachment/list",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/class/pageflow/add":{
+              "post":{
+                  "tags":[
+                      "ClassPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-class/pageflow/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/class/pageflow/delete/page":{
+              "post":{
+                  "tags":[
+                      "ClassPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-class/pageflow/delete/page",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/class/pageflow/delete":{
+              "post":{
+                  "tags":[
+                      "ClassPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-class/pageflow/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/class/pageflow":{
+              "get":{
+                  "tags":[
+                      "ClassPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-class/pageflow",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/class/pageflow/update":{
+              "post":{
+                  "tags":[
+                      "ClassPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-class/pageflow/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/clearance/bypass":{
+              "post":{
+                  "tags":[
+                      "ClearanceControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-clearance/bypass",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "parameters":[  
+                    {  
+                        "in":"formData",
+                        "type": "string",
+                        "name":"submissionId",
+                        "description":"Sumission ID",
+                        "required":true
+                    }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/clearance":{
+              "post":{
+                  "tags":[
+                      "ClearanceControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-clearance",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/clearance/hits":{
+              "post":{
+                  "tags":[
+                      "ClearanceControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-clearance/hits",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "parameters":[  
+                    {  
+                        "in":"formData",
+                        "type": "integer",
+                        "name":"submissionId",
+                        "description":"Submission ID"
+                    },{  
+                        "in":"formData",
+                        "type": "integer",
+                        "name":"version ",
+                        "description":"Version"
+                    }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/clearance/mail":{
+              "post":{
+                  "tags":[
+                      "ClearanceControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-clearance/mail",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/comparison/equals":{
+              "post":{
+                  "tags":[
+                      "ComparisonControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-comparison/equals",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/counties":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-counties",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "parameters":[  
+                    {  
+                        "in":"formData",
+                        "type": "string",
+                        "name":"state",
+                        "description":"State"
+                    }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/employer_liability_limit":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-employer_liability_limit",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/crud/add":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/crud/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/coming_soon":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/coming_soon",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/crud/delete":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/crud/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/crud":{
+              "get":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/crud",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/selected":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/selected",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/crud/update":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/crud/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/{live}":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/{live}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "parameters":[  
+                    {  
+                        "in":"path",
+                        "type": "string",
+                        "name":"live",
+                        "description":"State",
+                        "required":true
+                    }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/states/{live}/{label}":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-states/{live}/{label}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/zip_codes":{
+              "post":{
+                  "tags":[
+                      "CountyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-zip_codes",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/covid":{
+              "post":{
+                  "tags":[
+                      "CovidControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-covid",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/db/{operation}/{table}":{
+              "post":{
+                  "tags":[
+                      "DbController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-db/{operation}/{table}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/crud/add":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/crud/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/{column}":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/{column}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/{column}/{label}":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/{column}/{label}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/crud/delete":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/crud/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/info/crud/add":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/info/crud/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/info/crud/delete":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/info/crud/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/info/crud":{
+              "get":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/info/crud",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/info/crud/update":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/info/crud/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/options":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/options",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/options/{label}":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/options/{label}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/crud":{
+              "get":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/crud",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/crud/update":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/crud/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/deductible/escrow":{
+              "post":{
+                  "tags":[
+                      "DeductibleControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-deductible/escrow",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/dot/business":{
+              "post":{
+                  "tags":[
+                      "DotControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-dot/business",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/dot":{
+              "post":{
+                  "tags":[
+                      "DotControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-dot",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/error/add":{
+              "post":{
+                  "tags":[
+                      "ErrorFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-error/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/error/delete":{
+              "post":{
+                  "tags":[
+                      "ErrorFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-error/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/error":{
+              "get":{
+                  "tags":[
+                      "ErrorFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-error",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/error/update":{
+              "post":{
+                  "tags":[
+                      "ErrorFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-error/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/excess/other":{
+              "post":{
+                  "tags":[
+                      "ExcessControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-excess/other",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/excess/requested":{
+              "post":{
+                  "tags":[
+                      "ExcessControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-excess/requested",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/excess/xgl":{
+              "post":{
+                  "tags":[
+                      "ExcessControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-excess/xgl",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/fmcsa/add":{
+              "post":{
+                  "tags":[
+                      "FmcsaFixedFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-fmcsa/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/fmcsa/delete":{
+              "post":{
+                  "tags":[
+                      "FmcsaFixedFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-fmcsa/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/fmcsa":{
+              "get":{
+                  "tags":[
+                      "FmcsaFixedFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-fmcsa",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/fmcsa/update":{
+              "post":{
+                  "tags":[
+                      "FmcsaFixedFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-fmcsa/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/lob/modfactor/add":{
+              "post":{
+                  "tags":[
+                      "GradientAiLineOfBusinessModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/lob/modfactor/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/lob/modfactor/delete":{
+              "post":{
+                  "tags":[
+                      "GradientAiLineOfBusinessModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/lob/modfactor/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/lob/modfactor":{
+              "get":{
+                  "tags":[
+                      "GradientAiLineOfBusinessModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/lob/modfactor",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/lob/modfactor/update":{
+              "post":{
+                  "tags":[
+                      "GradientAiLineOfBusinessModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/lob/modfactor/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/modfactor/add":{
+              "post":{
+                  "tags":[
+                      "GradientAiModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/modfactor/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/modfactor/delete":{
+              "post":{
+                  "tags":[
+                      "GradientAiModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/modfactor/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/modfactor":{
+              "get":{
+                  "tags":[
+                      "GradientAiModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/modfactor",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/gradient/modfactor/update":{
+              "post":{
+                  "tags":[
+                      "GradientAiModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-gradient/modfactor/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/pageflow/add":{
+              "post":{
+                  "tags":[
+                      "LineOfBusinessClassCodesPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-pageflow/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/pageflow/delete":{
+              "post":{
+                  "tags":[
+                      "LineOfBusinessClassCodesPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-pageflow/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/pageflow":{
+              "get":{
+                  "tags":[
+                      "LineOfBusinessClassCodesPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-pageflow",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/pageflow/update":{
+              "post":{
+                  "tags":[
+                      "LineOfBusinessClassCodesPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-pageflow/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/lob/pageflow/add":{
+              "post":{
+                  "tags":[
+                      "LineOfBusinessPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-lob/pageflow/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/lob/pageflow/delete/page":{
+              "post":{
+                  "tags":[
+                      "LineOfBusinessPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-lob/pageflow/delete/page",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/lob/pageflow/delete":{
+              "post":{
+                  "tags":[
+                      "LineOfBusinessPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-lob/pageflow/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/lob/pageflow":{
+              "get":{
+                  "tags":[
+                      "LineOfBusinessPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-lob/pageflow",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/lob/pageflow/update":{
+              "post":{
+                  "tags":[
+                      "LineOfBusinessPageflowController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-lob/pageflow/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/math/sign":{
+              "post":{
+                  "tags":[
+                      "MathControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-math/sign",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/math/sum":{
+              "post":{
+                  "tags":[
+                      "MathControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-math/sum",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/modfactor/add":{
+              "post":{
+                  "tags":[
+                      "ModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-modfactor/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/modfactor/delete":{
+              "post":{
+                  "tags":[
+                      "ModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-modfactor/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/modfactor":{
+              "get":{
+                  "tags":[
+                      "ModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-modfactor",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/modfactor/update":{
+              "post":{
+                  "tags":[
+                      "ModfactorController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-modfactor/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/ofac":{
+              "post":{
+                  "tags":[
+                      "OfacController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-ofac",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/policy/codeeast/save":{
+              "post":{
+                  "tags":[
+                      "PolicyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-policy/codeeast/save",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/policy/codeeast":{
+              "post":{
+                  "tags":[
+                      "PolicyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-policy/codeeast",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/policy/producer":{
+              "post":{
+                  "tags":[
+                      "PolicyControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-policy/producer",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/class/add":{
+              "post":{
+                  "tags":[
+                      "QuestionClassCodeController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/class/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/class/delete":{
+              "post":{
+                  "tags":[
+                      "QuestionClassCodeController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/class/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/class":{
+              "get":{
+                  "tags":[
+                      "QuestionClassCodeController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/class",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/class/update":{
+              "post":{
+                  "tags":[
+                      "QuestionClassCodeController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/class/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/field-mappings":{
+              "get":{
+                  "tags":[
+                      "QuestionFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"field-mappings",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/field-mappings/questions":{
+              "get":{
+                  "tags":[
+                      "QuestionFieldMappingController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"field-mappings-questions",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/lob/add":{
+              "post":{
+                  "tags":[
+                      "QuestionLineOfBusinessController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/lob/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/lob/delete":{
+              "post":{
+                  "tags":[
+                      "QuestionLineOfBusinessController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/lob/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/lob":{
+              "get":{
+                  "tags":[
+                      "QuestionLineOfBusinessController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/lob",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/question/lob/update":{
+              "post":{
+                  "tags":[
+                      "QuestionLineOfBusinessController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-question/lob/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/addQuestionFieldMappings":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-addQuestionFieldMappings",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/addQuestionType":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-addQuestionType",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/addQuestions":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-addQuestions",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/deleteQuestionFieldMappings":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-deleteQuestionFieldMappings",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/deleteQuestionType/{id}":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-deleteQuestionType/{id}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/deleteQuestion/{id}":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-deleteQuestion/{id}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/editQuestionFieldMappings":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-editQuestionFieldMappings",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestion/{id}":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestion/{id}",
+                  "produces":[
+                      "application/json"
+                    ],
+                    "parameters":[  
+                    {  
+                        "in":"path",
+                        "type": "integer",
+                        "name":"id",
+                        "description":"Unique ID of the question",
+                        "required":true
+                    }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestionClassCode/{id}":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestionClassCode/{id}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "parameters":[  
+                    {  
+                        "in":"path",
+                        "type": "integer",
+                        "name":"id",
+                        "description":"Unique ID of the question",
+                        "required":true
+                    }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestionFieldMappings":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestionFieldMappings",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestionType/{id}":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestionType/{id}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "parameters":[  
+                      {  
+                          "in":"path",
+                          "type": "integer",
+                          "name":"id",
+                          "description":"Unique ID of the question",
+                          "required":true
+                      }],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestionsByClassPageflow":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestionsByClassPageflow",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestionsByLineOfBusinessPageflow":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestionsByLineOfBusinessPageflow",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestionsByPageflow":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestionsByPageflow",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/getQuestions":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-getQuestions",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/search/parseResponse":{
+              "get":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"search-parseResponse",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/removeTokens":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"removeTokens",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/question/updateQuestions":{
+              "post":{
+                  "tags":[
+                      "QuestionsController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"question-updateQuestions",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/redirect/policy":{
+              "post":{
+                  "tags":[
+                      "RedirectControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-redirect/policy",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/redirect":{
+              "post":{
+                  "tags":[
+                      "RedirectControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-redirect",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/score":{
+              "post":{
+                  "tags":[
+                      "ScoreControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-score",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/score/versions":{
+              "post":{
+                  "tags":[
+                      "ScoreControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-score/versions",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/secret":{
+              "post":{
+                  "tags":[
+                      "SecretControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-secret",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/session/{key}":{
+              "post":{
+                  "tags":[
+                      "SessionControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-session/{key}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/session":{
+              "post":{
+                  "tags":[
+                      "SessionControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-session",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode/add":{
+              "post":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode/delete":{
+              "post":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode/exposure/{lob}":{
+              "post":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode/exposure/{lob}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode/exposure/{lob}/{label}":{
+              "post":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode/exposure/{lob}/{label}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode/options/{lob}":{
+              "post":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode/options/{lob}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode/options/{lob}/{label}":{
+              "post":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode/options/{lob}/{label}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode":{
+              "get":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/subclasscode/update":{
+              "post":{
+                  "tags":[
+                      "SubClassCodeControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-subclasscode/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/finalize/codeeast":{
+              "post":{
+                  "tags":[
+                      "SubmissionFinalizeQuoteController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-finalize/codeeast",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/finalize":{
+              "get":{
+                  "tags":[
+                      "SubmissionFinalizeQuoteController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-finalize",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/finalize/producer":{
+              "post":{
+                  "tags":[
+                      "SubmissionFinalizeQuoteController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-finalize/producer",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/finalize/redirect":{
+              "post":{
+                  "tags":[
+                      "SubmissionFinalizeQuoteController"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-finalize/redirect",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/territory/add":{
+              "post":{
+                  "tags":[
+                      "TerritoryControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-territory/add",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/territory/cities":{
+              "post":{
+                  "tags":[
+                      "TerritoryControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-territory/cities",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/territory/delete":{
+              "post":{
+                  "tags":[
+                      "TerritoryControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-territory/delete",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/territory":{
+              "get":{
+                  "tags":[
+                      "TerritoryControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-territory",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/territory/update":{
+              "post":{
+                  "tags":[
+                      "TerritoryControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-territory/update",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/territory/verify":{
+              "post":{
+                  "tags":[
+                      "TerritoryControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-territory/verify",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/ui/refresh":{
+              "post":{
+                  "tags":[
+                      "UiControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-ui/refresh",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/ui/summary":{
+              "post":{
+                  "tags":[
+                      "UiControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-ui/summary",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/ui/finalize/lite":{
+              "post":{
+                  "tags":[
+                      "UiControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-ui/finalize/lite",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/ui/finalize":{
+              "post":{
+                  "tags":[
+                      "UiControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-ui/finalize",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/ui":{
+              "post":{
+                  "tags":[
+                      "UiControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-ui",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/ui/{step}":{
+              "post":{
+                  "tags":[
+                      "UiControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-ui/{step}",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          },
+      
+        "/api/version":{
+              "post":{
+                  "tags":[
+                      "VersionControllerImpl"
+                  ],
+                  "summary":"",
+                  "description":"This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.",
+                  "operationId":"api-version",
+                  "produces":[
+                      "application/json"
+                  ],
+                  "responses":{
+                      "200":{
+                          "description":"successful operation",
+                          "schema":{
+                              "$ref":"#/definitions/ApiResponse"
+                          }
+                      }
+                  },
+                  "security":[
+                      {
+                          "bearerAuth": []
+                      }
+                  ]
+              }
+          }
+    },
+    "securityDefinitions":{
+        "bearerAuth": {
+            "name": "Authorization",
+            "in": "header",
+            "type": "apiKey",
+            "description": "Synchronosure Authorization header"
+       }
+    },
+    "definitions":{
+       "ApiResponse":{
+          "type":"object",
+          "properties":{
+             "code":{
+                "type":"integer",
+                "format":"int32"
+             },
+             "type":{
+                "type":"string"
+             },
+             "message":{
+                "type":"string"
+             }
+          }
+       }
+    },
+    "externalDocs":{
+       "description":"Find out more about Swagger",
+       "url":"http://swagger.io"
+    }
+ }

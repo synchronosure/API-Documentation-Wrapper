@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import "~@angular/material/theming";
+@import "./_variables.scss";
+
+$custom-typography: mat-typography-config(
+  $font-family: '"Quicksand", Roboto,  sans-serif',
+  $display-4: mat-typography-level(112px, 112px, 400),
+  $display-3: mat-typography-level(56px, 56px, 500),
+  $display-2: mat-typography-level(45px, 48px, 500),
+  $display-1: mat-typography-level(34px, 40px, 500),
+  $headline: mat-typography-level(24px, 32px, 500),
+  $title: mat-typography-level(20px, 32px, 600),
+  $subheading-2: mat-typography-level(16px, 28px, 500),
+  $subheading-1: mat-typography-level(15px, 24px, 500),
+  $body-2: mat-typography-level(14px, 24px, 500, '"Lato",Roboto, sans-serif'),
+  $body-1: mat-typography-level(14px, 20px, 400, '"Lato",Roboto, sans-serif'),
+  $caption: mat-typography-level(12px, 18px, 400, '"Lato",Roboto, sans-serif'),
+  $button: mat-typography-level(14px, 14px, 500, '"Lato",Roboto, sans-serif'),
+  $input: mat-typography-level(14px, 1.25, 400, '"Lato",Roboto, sans-serif'),
+);
+@include mat-core($custom-typography);
+
+$mat-light-theme-background: (
+  app-bar: white,
+  background: #f9f9f9,
+  card: white,
+  dialog: white,
+  selected-button: $dark-focused,
+);
+$mat-dark-theme-background: (
+  app-bar: #202020,
+  background: #181818,
+  card: #202020,
+  dialog: #202020,
+  selected-button: $light-focused,
+);
+
+$app-primary-light: mat-palette($custom-primary-light);
+$app-accent-light: mat-palette($custom-accent-light);
+$app-warn: mat-palette($custom-warn);
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  color: #757575;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 3px solid $dark-focused;
+}
+.divider::before {
+  margin-right: 0.25em;
+}
+.divider::after {
+  margin-left: 0.25em;
+}
+div.mat-menu-panel {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 1px !important;
+  box-shadow: none !important;
+}
+
+.score-field-grid .mat-form-field-wrapper{
+  margin-bottom: -1.10em;
+}
+
+mat-card {
+  box-shadow: 0px !important;
+}
+
+mat-card.mat-elevation-z6 {
+  border-radius: 0px !important;
+}
+
+mat-card.inner-card {
+  border: 1px dashed rgba(0, 0, 0, 0.12) !important;
+  border-radius: 0px !important;
+  background-color: #fafafa;
+}
+
+mat-card.alt-style {
+  border: 4px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 4px !important;
+  border-width: 1px !important;
+  box-shadow: none !important;
+}
+
+$app-light-theme: mat-light-theme(
+  (
+    color: (
+      primary: $app-primary-light,
+      accent: $app-accent-light,
+      warn: $app-warn,
+    ),
+  )
+);
+@include angular-material-theme($app-light-theme);
+
+$app-primary-dark: mat-palette($custom-primary-dark);
+$app-accent-dark: mat-palette($custom-accent-dark);
+$app-dark-theme: mat-dark-theme(
+  (
+    color: (
+      primary: $app-primary-dark,
+      accent: $app-accent-dark,
+      warn: $app-warn,
+    ),
+  )
+);
+
+.dark-theme {
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #d4d4d4;
+  }
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid $light-focused;
+  }
+  div.mat-menu-panel {
+    border: 1px solid hsla(0, 0%, 100%, 0.12) !important;
+    border-radius: 1px;
+    box-shadow: none;
+  }
+  mat-card {
+    border: 1px solid hsla(0, 0%, 100%, 0.12) !important;
+  }
+
+  mat-card.inner-card {
+    background-color: #1e1e1f;
+  }
+
+  mat-card.alt-style {
+    border: 1px solid hsla(0, 0%, 100%, 0.12) !important;
+  }
+
+  .country-selector-code,
+  .label-wrapper {
+    color: white !important;
+  }
+
+  @include angular-material-color($app-dark-theme);
+}
+
+// .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+//   display: none;
+// }
