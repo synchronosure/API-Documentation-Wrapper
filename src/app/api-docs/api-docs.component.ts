@@ -29,11 +29,11 @@ export class ApiDocsComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {
-        this.ui.gridCols = window.innerWidth <= 400 ? 1 : 4;
+        this.ui.gridCols = window.innerWidth <= 500 ? 1 : 4;
     }
 
     onResize(event: any) {
-        this.ui.gridCols = event.target.innerWidth <= 400 ? 1 : 4;
+        this.ui.gridCols = event.target.innerWidth <= 500 ? 1 : 4;
     }
 
     goToApiDoc(url: string): void {
