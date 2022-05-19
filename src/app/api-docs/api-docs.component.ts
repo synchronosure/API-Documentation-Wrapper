@@ -12,19 +12,29 @@ export interface ApiOption {
     styleUrls: ['./api-docs.component.scss'],
 })
 export class ApiDocsComponent implements OnInit {
-    apiOptions: Array<any> = [
+    apiOptions: Array<ApiOption> = [
         {
             name: 'API documentation',
-            url: `${window.location.href}/assets/swagger.json`,
+            url: `${window.location.href}assets/swagger.json`,
         },
     ];
+
+    ui = {
+        gridCols: 4,
+    };
 
     selectedValue: string = '';
     swaggerURL: string = 'http://localhost:3200/index.html?url=';
 
     constructor() {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.ui.gridCols = window.innerWidth <= 400 ? 1 : 4;
+    }
+
+    onResize(event: any) {
+        this.ui.gridCols = event.target.innerWidth <= 400 ? 1 : 4;
+    }
 
     goToApiDoc(url: string): void {
         if (url) {
